@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.content{
+    position: relative;
+}
+.card{
+    margin: 0 auto;
+    background-color: #fff;
+    width: 400px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 40px -7px rgb(183, 191, 241);
+}
+
+.card .hero{
+    width: 100%;
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+}
+
+.container .card .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .title h4{
+   font-weight: 900;
+   font-size: 20px;
+   margin: 25px;
+}
+.main p{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 25px;
+}
+
+.container .content .annual_plan{
+    width: 80%;
+    height: 80px;
+    background-color: hsl(225, 100%, 98%) ;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .content .annual_plan .right{
+    display: flex;
+    position: relative;
+}
+.container .content .annual_plan .right p{
+    position: absolute;
+    left: 130%;
+    color: hsl(224, 23%, 55%) ;
+}
+.container .content .annual_plan .right span{
+    color: black;
+    font-weight: 700;
+}
+
+.container .content .button .btn{
+    width: 340px;
+    height: 55px;
+    background-color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    color: white;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 25px;
+    font-weight: 700;
+}
+ .container .content .button{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+.container .content .button p{
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+.container .content .annual_plan .left a{
+    font-weight: 700;
+}
+.container .content .annual_plan .left a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: hsl(245, 75%, 52%,0.7);
+}
+
+.container .content .button .btn:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background-color:  hsl(245, 75%, 52%,0.7);
+}
+
+.container .content .button p:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
+
+/* Media Query of Mobile Phone */
+
+@media only screen and (max-width:375px) {
+
+    .container .card{
+        width: 330px;
+        height: 590px;
+    }
+
+    .container .content .button .btn{
+        width: 290px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    
+    .main p{
+        font-size: 15px;
+        padding: 10px; 
+        margin-top: -10px;
+        line-height: 25px;
+    }
+    .content .title h4{
+        margin:25px;
+        font-size: 23px;
+    }
+}
